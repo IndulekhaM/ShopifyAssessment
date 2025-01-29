@@ -38,3 +38,60 @@
    ```sh
    python --version
    ```
+
+2. **Set Up a Virtual Environment** (Optional):  
+   To create an isolated environment, run the following command:
+   ```sh
+   python -m venv .venv
+   ```
+
+   Activate the virtual environment:
+   - **Windows**:
+     ```sh
+     .venv\Scripts\activate
+     ```
+   - **macOS/Linux**:
+     ```sh
+     source .venv/bin/activate
+     ```
+
+3. **Install Dependencies**:  
+   Run the following command to install the necessary dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+## Step 6: Set Up ChromeDriver
+
+1. **Install Chrome Browser**:  
+   Ensure that **Chrome** is installed on your system.
+
+2. **Install ChromeDriver**:  
+   Download the appropriate version of **ChromeDriver** from [here](https://chromedriver.chromium.org/downloads) based on your installed Chrome version. 
+
+3. **Add ChromeDriver to System Path**:  
+   Place the **ChromeDriver** in a known directory and add it to your system’s PATH.
+
+---
+
+## Step 7: Run the Automation Tests
+
+1. **Navigate to Your Project Directory**:  
+   Go to the folder where your project files are located.
+
+2. **Run the Tests**:  
+   Execute the test script with the following command:
+   ```sh
+   pytest test_script.py
+   ```
+
+   This will run the automated tests for the Pumper app's functionality.
+
+---
+
+## Additional Notes
+
+- **Selenium** will handle the browser automation, and it will automatically download the **ChromeDriver** if it's not present.
+- The automation scripts are written using **Selenium** and will test the Pumper app's core functionality.
+
+---
