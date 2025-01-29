@@ -1,4 +1,3 @@
-
 # Shopify Store Automation & Testing
 
 This repository contains the implementation of the Shopify store setup, automation scripts, and detailed reports. The task consists of three parts:
@@ -16,9 +15,12 @@ This repository contains the implementation of the Shopify store setup, automati
 - Shared the URL showcasing the Pumper offers.
 
 ### 2. Perform Comprehensive Testing
-- Automated tests for two functional events of the Pumper Bundle Quantity application.
-- Used **Selenium** for web automation with the **Chrome** browser.
-- Validated that the automated tests perform correctly and give expected results.
+Automated tests have been written for two key functionalities of the Pumper Bundle Quantity application:
+
+- **`BundleOffer.py`**: Automates the testing of the bundle offer feature, validating that the bundle quantity logic works correctly within the app.
+- **`QuantityBreaks.py`**: Automates the testing of the quantity breaks feature, ensuring that the discounts and offers apply correctly based on quantity selections.
+
+Both tests use **Selenium** for web automation with the **Chrome** browser and validate that the automated tests perform correctly and give expected results.
 
 ### 3. Prepare a Detailed Report
 - Documented the testing process, setup, and results of the automated tests.
@@ -45,13 +47,18 @@ Make sure **ChromeDriver** is installed and accessible in your system’s PATH. 
 
 ### Step 3: Execute the Automation Scripts
 
-Run the following command to start the tests:
+To run the automated tests, execute the following commands:
 
-```sh
-pytest test_script.py
-```
+- For testing the bundle offer functionality:
+  ```sh
+  pytest BundleOffer.py
+  ```
+- For testing the quantity breaks functionality:
+  ```sh
+  pytest QuantityBreaks.py
+  ```
 
-This will run the automated tests using **Selenium**.
+Both scripts will run the automated tests using **Selenium**. 
 
 ### Test Results
 
@@ -73,4 +80,3 @@ If the tests are successful, the results will be displayed in the terminal. You 
   - Adjust the `WebDriverWait` in the scripts if the page elements are loading slowly.
 
 ---
-
